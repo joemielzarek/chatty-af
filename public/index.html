@@ -1,7 +1,7 @@
 <!doctype html>
-<html>
+<html onload="loginPrompt()">
   <head>
-    <title>Chatty.af</title>
+    <title>Chatty/af</title>
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
@@ -10,15 +10,20 @@
     <script src="client.js"></script>
 
   </head>
-  <body>
+  <body >
 
-    <div class="chat-box">
-
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
-    </form>
+    <div class="chat-box" id="chat">
+      <div class="message-container">
+        <ul id="messages"></ul>
+      </div>
     </div>
+<footer>
+  <h1>Chatty/af</h1>
+  <form action="">
+    <input id="m" autocomplete="off" placeholder="Type to chat. Hit enter to send." />
+  </form>
+</footer>
+
 
   </body>
 </html>
